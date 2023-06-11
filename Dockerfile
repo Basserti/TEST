@@ -1,4 +1,4 @@
-FROM anibali/pytorch:1.7.0-cuda11.0
+FROM anibali/pytorch:2.0.0-cuda11.8
 RUN nvidia-smi
 RUN python -c 'import torch;print(torch.cuda.is_available())'
 EXPOSE 8501
