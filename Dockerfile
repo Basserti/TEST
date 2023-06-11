@@ -1,5 +1,5 @@
 FROM anibali/pytorch:2.0.0-cuda11.8
-RUN python -c 'import torch;print(torch.cuda.is_available())'
+RUN python3 -c 'import torch;print(torch.cuda.is_available())'
 EXPOSE 8501
 WORKDIR /model
 COPY requirements.txt ./requirements.txt
